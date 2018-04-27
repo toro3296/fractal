@@ -50,10 +50,12 @@ void check_args(int argc , char **argv){
 					exit(EXIT_FAILURE);
 		}
 	}
+	/*
 	printf("zoom  : %i \n",args.ZOOM_LEVEL );
 	printf("archivo salida   :%s\n", args.FILE_OUT);
 	printf("hilos :%i\n",args.NTHREADS );
 	printf("iteraciones   :%i\n", args.NITERACIONES);
+	*/
 	if ( args.ZOOM_LEVEL <= 0 ||
 	     args.FILE_OUT   == NULL || args.NITERACIONES <= 0 || args.NTHREADS <= 0) {
 		print_usage(argv[0]);
